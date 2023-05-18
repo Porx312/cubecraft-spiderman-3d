@@ -22,7 +22,8 @@ body{
 .container-body{
     margin: 0 auto;
     transform-style: preserve-3d;
-     animation: rotar alternate 20s ease-in-out infinite; 
+    transform: rotateY(35deg);
+    /* animation: rotar alternate 20s ease-in-out infinite;  */
 }
 .cube{
     position: relative;
@@ -40,11 +41,10 @@ body{
     line-height: 200px;
     text-align: center;
     font-size: 20px;
-    overflow: hidden; 
+
   }
   
   .front {
-
     transform: translateZ(100px);
   }
   
@@ -130,9 +130,10 @@ body{
     width:70px;
     height: 140px;
     position: relative;
-    top: -155px;
+    top: -143px;
     right: -55px;
     transform-style: preserve-3d;
+    transform: rotateX(35deg);
 }
 
 .left-arm-box{
@@ -182,8 +183,9 @@ body{
     height: 140px;
     position: relative;
     transform-style: preserve-3d;
-    top: -293px;
+    top: -287px;
     left: 278px;
+    transform: rotateX(35deg);
 }
 
 .right-arm-box{
@@ -237,7 +239,7 @@ body{
     height: 70px;
     position: relative;
     bottom: 280px;
-    right: -135px;
+    right: -140px;
 }
 
 .right-legs-box{
@@ -256,12 +258,12 @@ body{
 }
 .right--leg-top{
     height: 140px;
-    background-color: rgb(255, 6, 6);
+    background-color: rgb(6, 6, 47);
     transform: rotateX(90deg) translateZ(70px);
 }
 .right--leg-down{
     height: 140px;
-    background-color: rgb(1, 15, 208);
+    background-color: rgb(6, 6, 47);
     transform: rotateX(-90deg) translateZ(-10px);
 }
 
@@ -276,9 +278,56 @@ body{
     background-color: blueviolet;
     transform: rotateY(-90deg) translateZ(70px);
 }
+
+/* left leg */
+.left-legs{
+    transform-style: preserve-3d;
+    width:70px;
+    height: 70px;
+    position: relative;
+    bottom: 350px;
+    right:-200px;
+}
+
+.left-legs-box{
+    width: 60px;
+    border: 2px solid rgb(0, 0, 0,1);
+    height: 60px;
+    position: absolute;
+}
+.left--leg-front{
+    background-color: rgb(114, 0, 124);
+    transform: translateZ(70px);
+}
+.left--leg-back{
+    background-color: rgb(0, 0, 0);
+    transform: rotateY(180deg) translatez(70px);
+}
+.left--leg-top{
+    height: 140px;
+    background-color: rgb(6, 6, 47);
+    transform: rotateX(90deg) translateZ(70px);
+}
+.left--leg-down{
+    height: 140px;
+    background-color: rgb(6, 6, 47);
+    transform: rotateX(-90deg) translateZ(-10px);
+}
+
+.left--leg-left{
+    width: 140px;
+    background-color: rgb(76, 76, 76);
+    transform: rotateY(90deg) translateZ(-10px);
+}
+
+.right--leg-right{
+    width: 140px;
+    background-color: blueviolet;
+    transform: rotateY(-90deg) translateZ(70px);
+}
 @keyframes rotar {
     100%{
-        transform: rotateX(650deg); 
+        /* transform: rotateY(650deg);  */
     }
 }
 img{
